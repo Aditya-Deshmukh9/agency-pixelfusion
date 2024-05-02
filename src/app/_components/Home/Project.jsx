@@ -9,8 +9,11 @@ const Projects = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["50%", "-140%"]);
 
   return (
-    <section ref={targetRef} className="relative h-[300vh] bg-neutral-900">
-      <div className="sticky top-0 flex h-screen items-center overflow-hidden">
+    <section
+      ref={targetRef}
+      className="relative overflow-visible h-[300vh] bg-neutral-900"
+    >
+      <div className="sticky  top-0 flex h-screen items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-4">
           {cards.map((card, index) => {
             return <Card card={card} key={index} />;

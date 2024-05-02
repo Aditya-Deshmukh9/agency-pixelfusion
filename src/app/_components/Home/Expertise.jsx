@@ -26,15 +26,12 @@ function Expertise() {
   ];
 
   return (
-    <div className="h-screen flex flex-col items-center py-10 gap-y-6">
+    <div className="sm:h-screen flex flex-col items-center py-10 gap-y-6">
       <h3 className="gradient-text font-bold text-4xl">Our expertise</h3>
-      <p className="text-nowrap text-center opacity-70">
-        Vivamus a ligula ut velit placerat egestas at id leo. Nulla ac volutpat
-        <br />
-        nunc. Suspendisse ut magna porttitor, sollicitudin ligula at, molestie
-        dolor.
+      <p className="px-2 text-center opacity-70">
+        Vivamus a ligula ut velit placerat egestas at id leo. Nulla ac
       </p>
-      <div className="mt-12 flex items-center justify-evenly w-full">
+      <div className="mt-12 flex sm:flex-row flex-col items-center justify-evenly w-full">
         {cardData.map((e, index) => (
           <Card key={index} {...e} />
         ))}
