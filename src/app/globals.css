@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: rgb(221, 214, 254);
+  background: linear-gradient(0deg, rgba(221, 214, 254, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+@layer utilities {
+  .swiper-slide {
+    @apply flex justify-center items-center text-center font-bold bg-white
+  }
+}
