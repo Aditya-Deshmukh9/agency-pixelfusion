@@ -6,7 +6,7 @@ const Projects = () => {
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll();
 
-  const x = useTransform(scrollYProgress, [0, 1], ["50%", "-140%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["50%", "-95%"]);
 
   return (
     <section
@@ -26,7 +26,7 @@ const Projects = () => {
 
 const Card = ({ card }) => {
   return (
-    <div className="group relative h-[500px] w-[450px] overflow-hidden bg-neutral-200">
+    <div className="group relative h-[700px] w-[550px] overflow-hidden bg-neutral-200">
       <div
         style={{
           backgroundImage: `url(${card.url})`,

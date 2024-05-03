@@ -55,7 +55,7 @@ function Footer() {
         </div>
       </div>
       <footer className="h-10 bg-violet-500 text-white flex items-center justify-center">
-        Copyright © 2024 ThemeGenix
+        Copyright © 2024 Pixel Fusion
       </footer>
     </div>
   );
